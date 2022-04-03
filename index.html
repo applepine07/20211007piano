@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <style>
+        body {
+            font-size: 80%;
+            /* 字型預設是16px，這裡是16x0.8應該是12.8px */
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 0.15em;
+            /* ↑↑↑letter-spacing 是一個控制字元間距的屬性，這裡16x0.15應該是2.4px */
+            background-color: #efefef;
+        }
+
+        #page {
+            max-width: 940px;
+            min-width: 720px;
+            /* ↑↑↑所以最低720px寬~最高940px寬 */
+            margin: 10px auto 10px auto;
+            /* ↑↑↑ 上右下左 */
+            padding: 20px;
+            border: 4px double black;
+            background-color: white;
+        }
+
+        ul {
+            width: 570px;
+            padding: 15px;
+            margin: 0px auto 0px auto;
+            /* margin設為上下、左右皆0px，置中(auto) */
+            border-top: 2px solid black;
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            /* inline-block讓上下排列的li變左右排列喔 */
+            margin: 0px 3px;
+        }
+
+        p {
+            text-align: justify;
+            width: 600px;
+            margin: 20px auto 20px auto;
+            font-weight: normal;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            text-transform: uppercase;
+            /* ↑↑↑轉大寫 */
+            padding: 6px 7px 5px 7px;
+        }
+
+        li>a:hover {
+            color: darkgreen;
+            background-color: darkseagreen;
+        }
+
+        p>a:hover {
+            opacity: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <div id="logo" style="text-align:center;">
+            <img src="./images/logo.gif" alt="logo">
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">For Sale</a></li>
+            <li><a href="">Repairs</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <p>
+            <a href=""><img src="./images/keys.jpg" alt="main"></a>
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint maiores aspernatur asperiores
+            repellendus dicta, adipisci soluta dolor, voluptatem neque rem voluptate molestias facilis libero! Ratione
+            odit quos, commodi ut eveniet maiores nihil molestias, exercitationem accusamus libero et. Eveniet, rerum
+            culpa laboriosam dolore iste aperiam voluptate quis maxime similique fugiat.
+        </p>
+    </div>
+</body>
+
+</html>
